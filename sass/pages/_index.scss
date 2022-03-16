@@ -1,0 +1,14 @@
+.fa-arrow-left {
+    display: none;
+}
+
+.location {
+    @extend %flex-justify-center;
+    @extend %flex-align-center;
+
+    background-color: $background-color--medium;
+}
+
+.introduction {
+    background-color: $background-color--light;
+}

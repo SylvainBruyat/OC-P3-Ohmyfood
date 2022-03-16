@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/**********************
+Ordre d'import pour éviter les erreurs de compilation :
+1. Utils
+    1.1 Variables
+    1.2 Fonctions
+    1.3 Mixins
+    1.4 Placeholders (pas prévu sur ce projet)
+2. Vendors (pas prévu sur ce projet)
+3. Base
+4. Components
+5. Layouts
+6. Pages
+7. Themes (pas prévu sur ce projet)
+**********************/
+/* A voir si j'intègre les polices via Google Fonts
+ou si je fais télécharger les fichiers au navigateur*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.location, .header p, .header {
+  display: flex;
+  justify-content: center;
+}
+
+.location, .header {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding: 0 20px;
+}
+.header__logo {
+  width: 50%;
+}
+
+.fa-arrow-left {
+  display: none;
+}
+
+.location {
+  background-color: #E9E9E9;
+}
+
+.introduction {
+  background-color: #F6F6F6;
+}
+
+/*# sourceMappingURL=main.css.map */
