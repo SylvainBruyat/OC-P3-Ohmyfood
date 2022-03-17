@@ -16,7 +16,7 @@
     <title>Ohmyfood! Paris | Accueil</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header shadow--dark"> <!-- Ombre non-visible car masquée par le fond du bloc "location". A mettre en inset sur le bloc "location" ? -->
         <a href="index.html">
             <i class="fas fa-arrow-left header__arrow--hidden"></i>
         </a>
@@ -27,33 +27,35 @@
 
     <main>
         <aside class="location">
-            <i class="fas fa-map-marker-alt location__icon"></i>
-            <p>Paris, Belleville</p>
+            <p>
+                <i class="fas fa-map-marker-alt location__icon"></i>
+                Paris, Belleville
+            </p>
         </aside>
 
         <section class="introduction">
             <h1>Réservez le menu qui vous convient</h1>
             <p class="introduction__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             <a href="#restaurants">
-                <button class="btn">Explorer nos restaurants</button>
+                <button class="btn shadow">Explorer nos restaurants</button>
             </a>
         </section>
 
         <section class="functioning">
             <h2>Fonctionnement</h2>
-            <div class="functioning__step">
-                <p>1</p>
-                <i class="fas fa-mobile-alt"></i>
+            <div class="functioning__step shadow">
+                <p class="functioning__number">1</p>
+                <i class="fas fa-mobile-alt fa-lg functioning__icon"></i>
                 <p>Choisissez un restaurant</p>
             </div>
-            <div class="functioning__step">
-                <p>2</p>
-                <i class="fas fa-list-ul"></i>
+            <div class="functioning__step shadow">
+                <p class="functioning__number">2</p>
+                <i class="fas fa-list-ul functioning__icon"></i>
                 <p>Composez votre menu</p>
             </div>
-            <div class="functioning__step">
-                <p>3</p>
-                <i class="fas fa-store"></i>
+            <div class="functioning__step shadow">
+                <p class="functioning__number">3</p>
+                <i class="fas fa-store functioning__icon"></i>
                 <p>Dégustez au restaurant</p>
             </div>
         </section>

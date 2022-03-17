@@ -1,19 +1,20 @@
 .location {
     @extend %flex-center-center;
+    padding: 15px 0;
+    background-color: $background-grey--medium;
 
-    position: relative;
-    background-color: $grey--medium;
-
-    &__icon {
+    p {
         position: relative;
-        right: 5%;
+    }
+    &__icon {
+        position: absolute;
+        left: -20%;
     }
 }
 
 .introduction {
     @extend %flex-column-align-center;
-
-    background-color: $grey--light;
+    background-color: $background-grey--light;
 
     h1 {
         max-width: 75%;
@@ -25,7 +26,7 @@
     &__text {
         max-width: 85%;
         margin: 0 0 30px 0;
-        color: lighten($color: black, $amount: 40%);
+        color: $grey-primary;
         text-align: center;
     }
 
@@ -39,12 +40,43 @@
     padding: 50px 20px 65px 20px;
 
     &__step {
-        @extend %flex;
+        @extend %flex-align-center;
+        height: 70px;
+        margin: 50px 0;
+        border-radius: 20px;
+        background-color: $background-grey--light;
+
+        &:hover {
+            background-color: $color-primary--light;
+        }
+
+        &:hover .functioning__icon {
+            color: $color-primary;
+        }
+    }
+
+    &__number {
+        @extend %flex-center-center;
+        margin-left: -12px;
+        height: 24px;
+        width: 24px;
+        border-radius: 12px;
+        color: white;
+        background-color: $color-primary;
+    }
+
+    &__icon {
+        padding-left: 20px;
+        color: $grey-primary;
+    }
+
+    p {
+        font-weight: bold;
     }
 }
 
 .restaurants {
-    background-color: $grey--light;
+    background-color: $background-grey--light;
 
     a {
         border-radius: 12px;

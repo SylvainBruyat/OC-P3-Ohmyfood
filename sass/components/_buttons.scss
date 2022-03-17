@@ -8,4 +8,8 @@
     color: white;
     font-size: 18px;
     cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(lighten($color-secondary, 3%,), lighten($color-primary, 3%,));
+    }
 }
