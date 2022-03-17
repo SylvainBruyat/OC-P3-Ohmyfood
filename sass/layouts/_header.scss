@@ -1,14 +1,19 @@
 .header {
-    @extend %flex-justify-center;
-    @extend %flex-align-center;
+    @extend %flex-center-center;
     
     padding: 0 20px;
 
-     p {
-        @extend %flex-justify-center;
+    p {
+        @extend %flex-center;
     }
 
     &__logo {
         width: 50%;
+    }
+
+    &__arrow {
+        &--hidden {
+            display: none;
+        }
     }
 }

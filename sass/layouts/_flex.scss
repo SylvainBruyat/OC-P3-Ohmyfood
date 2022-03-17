@@ -1,8 +1,11 @@
 %flex { display: flex; }
 
 %flex-column { display: flex; flex-direction: column; }
+%flex-column-align-center { display: flex; flex-direction: column; align-items: center; }
 
-%flex-justify-center { display: flex; justify-content: center; }
-%flex-justify-space-between { display: flex; justify-content: space-between;}
+%flex-center { display: flex; justify-content: center; }
+%flex-center-center { display: flex; justify-content: center; align-items: center; }
+%flex-space-between { display: flex; justify-content: space-between;}
+
 
 %flex-align-center { display: flex; align-items: center; }

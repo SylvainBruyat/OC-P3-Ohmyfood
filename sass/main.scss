@@ -16,7 +16,8 @@ Ordre d'import pour éviter les erreurs de compilation :
 @import "./utils/variables";
 
 @import "./base/base";
-
+@import "./components/buttons";
 @import "./layouts/flex";
 @import "./layouts/header";
+@import "./layouts/_footer";
 @import "./pages/index";

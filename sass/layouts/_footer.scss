@@ -1,0 +1,18 @@
+.footer {
+    background-color: $grey--dark;
+
+    h2 {
+        margin: 0;
+        font-family: $font-secondary;
+        color: white;
+    }
+
+    &__link {
+        @extend %flex-align-center;
+        color: white;
+    }
+
+    &__icon {
+        color: white;
+    }
+}

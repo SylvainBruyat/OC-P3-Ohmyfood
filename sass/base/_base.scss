@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: $font-main;
+    font-family: $font-primary;
     margin: 0;
 }
 
@@ -14,4 +14,8 @@ a {
 
 main {
     @extend %flex-column;
+}
+
+p {
+    margin: 0;
 }
