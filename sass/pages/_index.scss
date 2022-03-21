@@ -8,7 +8,7 @@
     }
     &__icon {
         position: absolute;
-        left: -20%;
+        left: -25%;
     }
 }
 
@@ -37,7 +37,7 @@
 }
 
 .functioning {
-    padding: 50px 20px 65px 20px;
+    padding: 50px 20px 65px 32px;
 
     &__step {
         @extend %flex-align-center;
@@ -66,7 +66,8 @@
     }
 
     &__icon {
-        padding-left: 20px;
+        width: 16px;
+        margin: 0 25px 0 20px;
         color: $grey-primary;
     }
 
@@ -76,7 +77,9 @@
 }
 
 .restaurants {
+    @extend %flex-column;
     background-color: $background-grey--light;
+    padding: 0 20px 0 20px;
 
     a {
         margin-bottom: 15px;
@@ -84,8 +87,9 @@
     }
 
     &__card {
-        max-width: 90%;
+        width: 100%;
         height: 250px;
+        background-color: white;
         border-radius: 12px;
     }
 
@@ -98,7 +102,7 @@
     img {
         width: 100%;
         height: 100%;
-
+        border-radius: 12px 12px 0 0;
         object-fit: cover;
     }
 
@@ -117,6 +121,7 @@
 
     &__description {
         @extend %flex-space-between-center;
+        height: 75px;
         padding: 0 25px 0 15px;
     }
 }

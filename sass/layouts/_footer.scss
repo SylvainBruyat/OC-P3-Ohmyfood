@@ -1,5 +1,6 @@
 .footer {
     background-color: $background-grey--dark;
+    padding: 25px 0 15px 25px;
 
     h2 {
         margin: 0;
@@ -7,12 +8,19 @@
         color: white;
     }
 
+    &__item {
+        padding: 5px 0;
+    }
+
     &__link {
         @extend %flex-align-center;
+        width: fit-content;
         color: white;
     }
 
     &__icon {
+        width: 12px;
+        margin-right: 12px;
         color: white;
     }
 }
