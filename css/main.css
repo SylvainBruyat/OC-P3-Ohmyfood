@@ -86,29 +86,29 @@ ul {
   background-color: white;
   animation: white-background 3s ease-in-out forwards;
 }
-.loading__spinner-1 {
+.loading__spinner--1 {
   width: 200px;
   height: 200px;
-  border: 8px solid white;
-  border-bottom: 6px solid #9356DC;
+  border: 10px solid white;
+  border-bottom: 10px solid #9356DC;
   border-radius: 50%;
-  animation: spinner 3s ease-in-out forwards;
+  animation: spinner 3s ease-in-out 50ms both;
 }
-.loading__spinner-2 {
+.loading__spinner--2 {
   width: 150px;
   height: 150px;
-  border: 8px solid white;
-  border-bottom: 8px solid #FF79DA;
+  border: 10px solid white;
+  border-bottom: 10px solid #FF79DA;
   border-radius: 50%;
-  animation: spinner 3s ease-in-out forwards;
+  animation: spinner 3s ease-in-out 100ms both;
 }
-.loading__spinner-3 {
+.loading__spinner--3 {
   width: 100px;
   height: 100px;
-  border: 8px solid white;
+  border: 10px solid white;
   border-bottom: 10px solid #99E2D0;
   border-radius: 50%;
-  animation: spinner 3s forwards;
+  animation: spinner 3s ease-in-out 150ms both;
 }
 
 .btn {
@@ -142,7 +142,7 @@ ul {
   justify-content: center;
 }
 
-.restaurants__new, .functioning__number, .location, .header, .loading, .loading__spinner-1, .loading__spinner-2, .loading__spinner-3 {
+.restaurants__new, .functioning__number, .location, .header, .loading, .loading__spinner--1, .loading__spinner--2, .loading__spinner--3 {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,3 +1,6 @@
+$num-spinners: 3;
+$colors: (1: $color-primary, 2: $color-secondary, 3: $color-tertiary);
+
 @keyframes spinner {
     0% {
         transform: scale(0) rotate(0deg);
@@ -45,33 +48,17 @@
     background-color: white;
     animation: white-background 3s ease-in-out forwards;
 
-    &__spinner-1{
-        @extend %flex-center-center;
-        width: 200px;
-        height: 200px;
-        border: 8px solid white;
-        border-bottom: 6px solid $color-primary;
-        border-radius: 50%;
-        animation: spinner 3s ease-in-out forwards;
-    }
-
-    &__spinner-2 {
-        @extend %flex-center-center;
-        width: 150px;
-        height: 150px;
-        border: 8px solid white;
-        border-bottom: 8px solid $color-secondary;
-        border-radius: 50%;
-        animation: spinner 3s ease-in-out forwards;
-    }
-
-    &__spinner-3 {
-        @extend %flex-center-center;
-        width: 100px;
-        height: 100px;
-        border: 8px solid white;
-        border-bottom: 10px solid $color-tertiary;
-        border-radius: 50%;
-        animation: spinner 3s forwards;
+    &__spinner{
+        @for $i from 1 through $num-spinners {
+            &--#{$i} {
+                @extend %flex-center-center;
+                width: 250-$i*50px;
+                height: 250-$i*50px;
+                border: 10px solid white;
+                border-bottom: 10px solid map-get($colors, $i);
+                border-radius: 50%;
+                animation: spinner 3s ease-in-out 50ms*$i both;
+            } 
+        }
     }
 }
