@@ -3,12 +3,22 @@
     padding: 15px 0;
     background-color: $background-grey--medium;
 
-    p {
-        position: relative;
+    &__text-field {
+        width: 140px;
+        background-color: $background-grey--medium;
+        border: 0;
+
+        &::placeholder {
+            opacity: 1;
+        }
+
+        &:focus {
+            background-color: $background-grey--light;
+        }
     }
+
     &__icon {
-        position: absolute;
-        left: -25%;
+        margin-right: 12px;
     }
 }
 

@@ -278,12 +278,19 @@ ul {
   padding: 15px 0;
   background-color: #E9E9E9;
 }
-.location p {
-  position: relative;
+.location__text-field {
+  width: 140px;
+  background-color: #E9E9E9;
+  border: 0;
+}
+.location__text-field::placeholder {
+  opacity: 1;
+}
+.location__text-field:focus {
+  background-color: #F6F6F6;
 }
 .location__icon {
-  position: absolute;
-  left: -25%;
+  margin-right: 12px;
 }
 
 .introduction {
