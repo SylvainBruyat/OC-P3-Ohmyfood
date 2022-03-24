@@ -9,8 +9,8 @@
     color: white;
     font-size: 18px;
     cursor: pointer;
-
+    transition: opacity 0.2s ease-in-out;
     &:hover {
-        background: linear-gradient(lighten($color-secondary, 3%,), lighten($color-primary, 3%,));
+        opacity: 0.9;
     }
 }
