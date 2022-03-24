@@ -132,13 +132,66 @@ ul {
   background: linear-gradient(#ff88de, #9b63df);
 }
 
-.fa-heart {
-  font-weight: normal;
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.15);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes liking-filled-heart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes liking-empty-heart {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.like-button input[type=checkbox], .like-button .heart--liked {
+  display: none;
 }
 
-.menu__heart {
-  margin-right: 25px;
-  font-size: 28px;
+.like-button input[type=checkbox]:checked ~ .heart--liked {
+  display: inline-block;
+  animation: liking-filled-heart 1s ease-in-out;
+}
+
+.like-button input[type=checkbox]:checked ~ .heart--not-liked {
+  animation: liking-empty-heart 0.4s 0.6s forwards;
+}
+
+.fa-heart {
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.heart--liked {
+  font-weight: bold;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  /* Besoin du préfixe -webkit- pour fonctionner sur Chrome. A mettre via autoprefixer */
+  color: #FFFFFF00;
+}
+.heart--not-liked:hover {
+  animation: heartbeat 0.3s ease-in-out;
 }
 
 .menu__text, .restaurants, main {
@@ -157,7 +210,7 @@ ul {
   justify-content: center;
 }
 
-.menu__select, .restaurants__new, .functioning__number, .location, .header, .loading, .loading__spinner--1, .loading__spinner--2, .loading__spinner--3, .btn {
+.menu__select, .restaurants__new, .functioning__number, .location, .header, .loading, .loading__spinner--1, .loading__spinner--2, .loading__spinner--3, .btn, .fa-stack {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -323,7 +376,10 @@ ul {
 }
 .restaurants__description {
   height: 75px;
-  padding: 0 25px 0 15px;
+  padding: 0 15px;
+}
+.restaurants__heart {
+  font-size: 24px;
 }
 
 .picture {
@@ -345,6 +401,12 @@ ul {
 .menu h1 {
   font-family: "Shrikhand", cursive;
   margin: 0;
+}
+.menu__heart-container {
+  padding-right: 15px;
+}
+.menu__heart {
+  font-size: 28px;
 }
 .menu h2 {
   position: relative;

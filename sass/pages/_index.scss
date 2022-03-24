@@ -42,7 +42,7 @@
     &__step {
         @extend %flex-align-center;
         height: 70px;
-        margin: 50px 0;
+        margin: 20px 0;
         border-radius: 20px;
         background-color: $background-grey--light;
 
@@ -122,6 +122,10 @@
     &__description {
         @extend %flex-space-between-center;
         height: 75px;
-        padding: 0 25px 0 15px;
+        padding: 0 15px;
+    }
+
+    &__heart {
+        font-size: 24px;
     }
 }

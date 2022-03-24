@@ -35,8 +35,12 @@
         <section class="menu">
             <div class="title">
                 <h1>À la française</h1>
-                <div class="hearts"> <!-------------------------- Division à supprimer à la fin si je reste avec une seule icône ----------------------->
-                    <i class="fas fa-heart menu__heart"></i>
+                <div class="menu__heart-container"> <!-------------------------- Division à supprimer à la fin si je reste avec une seule icône ----------------------->
+                    <label for="like-button" class="like-button fa-stack">
+                        <input type="checkbox" id="like-button" />
+                        <i class="fas fa-heart menu__heart heart--not-liked fa-stack-1x"></i>
+                        <i class="fas fa-heart menu__heart heart--liked fa-stack-1x"></i>
+                    </label>
                 </div>
             </div>
 
