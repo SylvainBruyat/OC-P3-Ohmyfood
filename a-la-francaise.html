@@ -35,7 +35,7 @@
         <section class="menu">
             <div class="title">
                 <h1>À la française</h1>
-                <div class="menu__heart-container"> <!-------------------------- Division à supprimer à la fin si je reste avec une seule icône ----------------------->
+                <div class="menu__heart-container">
                     <label for="like-button" class="like-button fa-stack">
                         <input type="checkbox" id="like-button" />
                         <i class="fas fa-heart menu__heart heart--not-liked fa-stack-1x"></i>
@@ -44,14 +44,14 @@
                 </div>
             </div>
 
-            <section class="starters">
+            <section class="menu__starters">
                 <div>
                     <h2>
                         Entrées
                         <span class="menu__underline"></span>
                     </h2>
                 </div>
-                <div class="menu__item">
+                <label for="menu__select-tartare" class="menu__item">
                     <div class="menu__text">
                         <h3>Tartare de poulpe acidulé</h3>
                         <div class="menu__desc-price">
@@ -59,9 +59,10 @@
                             <p class="menu__price">25€</p>
                         </div>
                     </div>
+                    <input type="checkbox" id="menu__select-tartare">
                     <i class="fas fa-check-circle menu__select"></i>
-                </div>
-                <div class="menu__item">
+                </label>
+                <label for="menu__select-veloute" class="menu__item">
                     <div class="menu__text">
                         <h3>Velouté de légumes d'antan</h3>
                         <div class="menu__desc-price">
@@ -69,9 +70,10 @@
                             <p class="menu__price">35€</p>
                         </div>
                     </div>
+                    <input type="checkbox" id="menu__select-veloute">
                     <i class="fas fa-check-circle menu__select"></i>
-                </div>
-                <div class="menu__item">
+                </label>
+                <label for="menu__select-soupe" class="menu__item">
                     <div class="menu__text">
                         <h3>Soupe à l'oignon</h3>
                         <div class="menu__desc-price">
@@ -79,18 +81,19 @@
                             <p class="menu__price">20€</p>
                         </div>
                     </div>
+                    <input type="checkbox" id="menu__select-soupe">
                     <i class="fas fa-check-circle menu__select"></i>
-                </div>
+                </label>
             </section>
 
-            <section class="main-courses">
+            <section class="menu__main-courses">
                 <div>
                     <h2>
                         Plats
                         <span class="menu__underline"></span>
                     </h2>
                 </div>
-                <div class="menu__item">
+                <label for="menu__select-saint-jacques" class="menu__item">
                     <div class="menu__text">
                         <h3>Coquilles Saint-Jacques</h3>
                         <div class="menu__desc-price">
@@ -98,9 +101,10 @@
                             <p class="menu__price">40€</p>
                         </div>
                     </div>
+                    <input type="checkbox" id="menu__select-saint-jacques">
                     <i class="fas fa-check-circle menu__select"></i>
-                </div>
-                <div class="menu__item">
+                </label>
+                <label for="menu__select-magret" class="menu__item">
                     <div class="menu__text">
                         <h3>Magret de canard</h3>
                         <div class="menu__desc-price">
@@ -108,9 +112,10 @@
                             <p class="menu__price">35€</p>
                         </div>
                     </div>
+                    <input type="checkbox" id="menu__select-magret">
                     <i class="fas fa-check-circle menu__select"></i>
-                </div>
-                <div class="menu__item">
+                </label>
+                <label for="menu__select-pigeonneau" class="menu__item">
                     <div class="menu__text">
                         <h3>Pigeonneau d'Ille-et-Vilaine</h3>
                         <div class="menu__desc-price">
@@ -118,18 +123,19 @@
                             <p class="menu__price">44€</p>
                         </div>
                     </div>
+                    <input type="checkbox" id="menu__select-pigeonneau">
                     <i class="fas fa-check-circle menu__select"></i>
-                </div>
+                </label>
             </section>
 
-            <section class="desserts">
+            <section class="menu__desserts">
                 <div>
                     <h2>
                         Desserts
                         <span class="menu__underline"></span>
                     </h2>
                 </div>
-                <div class="menu__item">
+                <label for="menu__select-petales" class="menu__item">
                     <div class="menu__text">
                         <h3>Pétales de violettes glacés</h3>
                         <div class="menu__desc-price">
@@ -137,9 +143,10 @@
                             <p class="menu__price">18€</p>
                         </div>
                     </div>
+                    <input type="checkbox" id="menu__select-petales">
                     <i class="fas fa-check-circle menu__select"></i>
-                </div>
-                <div class="menu__item">
+                </label>
+                <label for="menu__select-fondant" class="menu__item">
                     <div class="menu__text">
                         <h3>Fondant au chocolat</h3>
                         <div class="menu__desc-price">
@@ -147,9 +154,10 @@
                             <p class="menu__price">22€</p>
                         </div>
                     </div>
+                    <input type="checkbox" id="menu__select-fondant">
                     <i class="fas fa-check-circle menu__select"></i>
-                </div>
-                <div class="menu__item">
+                </label>
+                <label for="menu__select-millefeuille" class="menu__item">
                     <div class="menu__text">
                         <h3>Millefeuille croustillant</h3>
                         <div class="menu__desc-price">
@@ -157,8 +165,9 @@
                             <p class="menu__price">23€</p>
                         </div>
                     </div>
+                    <input type="checkbox" id="menu__select-millefeuille">
                     <i class="fas fa-check-circle menu__select"></i>
-                </div>
+                </label>
             </section>
 
             <div class="order">

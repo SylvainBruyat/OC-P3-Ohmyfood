@@ -1,0 +1,32 @@
+.menu {
+    &__item {
+        input[type=checkbox] {
+            display: none;
+        }
+
+        &:hover .menu__select, &:hover .menu__price {
+            transform: translateX(-60px);
+        }
+
+        &:hover .menu__select::before {
+            transform: rotate(360deg);
+            transition: transform 0.5s linear;
+        }
+
+        &:hover .menu__desc {
+            margin-right: 60px;
+        }
+    }
+
+    &__select {
+        @extend %flex-center-center;
+        min-width: 60px;
+        width: 60px;
+        height: 100%;
+        margin-right: -60px;
+        background-color: $color-tertiary;
+        border-radius: 0 15px 15px 0;
+        color: white;
+        transition: transform 0.5s ease-in-out;
+    }  
+} 
