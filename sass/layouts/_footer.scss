@@ -6,12 +6,27 @@
         max-width: 650px;
         margin: 0 auto;
         padding: 25px 0 15px 25px;
+
+        @include desktop-layout {
+            max-width: 1500px;
+        }
     }
 
     h2 {
         margin: 0;
         font-family: $font-secondary;
         color: white;
+
+        @include desktop-layout {
+            width: fit-content;
+            margin: 0 auto;
+        }
+    }
+
+    ul {
+        @include desktop-layout {
+            @include flex-space-around-center;
+        }
     }
 
     &__item {

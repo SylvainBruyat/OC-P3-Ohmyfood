@@ -13,8 +13,8 @@
             transition: transform 0.5s linear;
         }
 
-        &:hover .menu__desc {
-            margin-right: 60px;
+        &:hover .menu__desc, &:hover h3 {
+            margin-right: 50px;
         }
     }
 

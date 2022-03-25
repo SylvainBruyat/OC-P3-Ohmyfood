@@ -20,6 +20,11 @@
     width: 100%;
     max-height: 265px;
     margin: 0 auto;
+    overflow: hidden;
+
+    @include desktop-layout {
+        max-width: 1920px;
+    }
 
     img {
         width: 100%;
@@ -36,8 +41,16 @@
     background-color: $background-grey--light;
     border-radius: 35px 35px 0 0;
 
-    .title {
+    @include desktop-layout {
+        max-width: 1920px;
+    }
+
+    &__title {
         @include flex-space-between-center;
+        @include desktop-layout {
+            max-width: 650px;
+            margin: 0 auto;
+        }
     }
 
     h1 {
@@ -51,6 +64,20 @@
 
     &__heart {
         font-size: 28px;
+    }
+
+    &__list {
+        @include desktop-layout {
+            @include flex-space-around-center;
+            max-width: 1450px;
+            margin: 0 auto;
+        }
+    }
+
+    &__starters, &__main-courses, &__desserts {
+        @include desktop-layout {
+            width: 30%;
+        }
     }
 
     &__starters {
@@ -101,6 +128,13 @@
         @include flex-column;
         width: 100%;
         padding: 0 24px 0 12px;
+    }
+
+    h3 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: margin-right 0.3s ease-in-out;
     }
 
     &__desc-price {
