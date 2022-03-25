@@ -9,11 +9,11 @@
     }
 
     &__item {
+        @extend %flex-align-center;
         padding: 5px 0;
     }
 
     &__link {
-        @extend %flex-align-center;
         width: fit-content;
         color: white;
     }

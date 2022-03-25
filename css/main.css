@@ -130,7 +130,7 @@ ul {
   transition: opacity 0.2s ease-in-out;
 }
 .btn:hover {
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 @keyframes heartbeat {
@@ -247,7 +247,7 @@ ul {
   align-items: center;
 }
 
-.functioning__step, .footer__link {
+.functioning__step, .footer__item {
   display: flex;
   align-items: center;
 }
