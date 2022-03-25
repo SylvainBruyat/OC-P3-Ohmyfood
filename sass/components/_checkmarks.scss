@@ -19,7 +19,7 @@
     }
 
     &__select {
-        @extend %flex-center-center;
+        @include flex-center-center;
         min-width: 60px;
         width: 60px;
         height: 100%;

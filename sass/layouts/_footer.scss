@@ -1,6 +1,12 @@
 .footer {
     background-color: $background-grey--dark;
-    padding: 25px 0 15px 25px;
+    
+
+    &__content {
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 25px 0 15px 25px;
+    }
 
     h2 {
         margin: 0;
@@ -9,7 +15,7 @@
     }
 
     &__item {
-        @extend %flex-align-center;
+        @include flex-align-center;
         padding: 5px 0;
     }
 

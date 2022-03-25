@@ -1,18 +1,4 @@
 @charset "UTF-8";
-/**********************
-Ordre d'import pour éviter les erreurs de compilation :
-1. Utils
-    1.1 Variables
-    1.2 Fonctions
-    1.3 Mixins
-    1.4 Placeholders (pas prévu sur ce projet)
-2. Vendors (pas prévu sur ce projet)
-3. Base
-4. Components
-5. Layouts
-6. Pages
-7. Themes (pas prévu sur ce projet)
-**********************/
 * {
   box-sizing: border-box;
 }
@@ -25,6 +11,11 @@ body {
 a {
   text-decoration: none;
   color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 p {
@@ -77,6 +68,9 @@ ul {
   }
 }
 .loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -87,6 +81,9 @@ ul {
   A remettre à 3s avant livraison ****/
 }
 .loading__spinner--1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 200px;
   border: 10px solid white;
@@ -97,6 +94,9 @@ ul {
   A remettre à 3s avant livraison ****/
 }
 .loading__spinner--2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 150px;
   height: 150px;
   border: 10px solid white;
@@ -107,6 +107,9 @@ ul {
   A remettre à 3s avant livraison ****/
 }
 .loading__spinner--3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 100px;
   border: 10px solid white;
@@ -118,6 +121,9 @@ ul {
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   min-width: 190px;
   padding: 0 25px;
@@ -166,6 +172,12 @@ ul {
     opacity: 0;
   }
 }
+.fa-stack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .like-button input[type=checkbox], .like-button .heart--liked {
   display: none;
 }
@@ -209,6 +221,9 @@ ul {
   margin-right: 60px;
 }
 .menu__select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 60px;
   width: 60px;
   height: 100%;
@@ -219,39 +234,7 @@ ul {
   transition: transform 0.5s ease-in-out;
 }
 
-.menu__text, .restaurants, main {
-  display: flex;
-  flex-direction: column;
-}
-
-.introduction {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.menu .order, .header p {
-  display: flex;
-  justify-content: center;
-}
-
-.restaurants__new, .functioning__number, .location, .header, .loading, .loading__spinner--1, .loading__spinner--2, .loading__spinner--3, .btn, .fa-stack, .menu__select {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu__desc-price, .menu__item, .menu .title, .restaurants__description {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.functioning__step, .footer__item {
-  display: flex;
-  align-items: center;
-}
-
+/* @import "./layouts/flex"; */
 .shadow {
   box-shadow: 0px 5px 5px 2px #E9E9E9;
   transition: box-shadow 0.15s ease-in-out;
@@ -264,8 +247,15 @@ ul {
 }
 
 .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px 20px 12px 20px;
   position: relative;
+}
+.header p {
+  display: flex;
+  justify-content: center;
 }
 .header__logo {
   width: 170px;
@@ -280,6 +270,10 @@ ul {
 
 .footer {
   background-color: #383838;
+}
+.footer__content {
+  max-width: 650px;
+  margin: 0 auto;
   padding: 25px 0 15px 25px;
 }
 .footer h2 {
@@ -288,6 +282,8 @@ ul {
   color: white;
 }
 .footer__item {
+  display: flex;
+  align-items: center;
   padding: 5px 0;
 }
 .footer__link {
@@ -301,6 +297,9 @@ ul {
 }
 
 .location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px 0;
   background-color: #E9E9E9;
 }
@@ -320,6 +319,9 @@ ul {
 }
 
 .introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #F6F6F6;
 }
 .introduction h1 {
@@ -340,9 +342,14 @@ ul {
 }
 
 .functioning {
+  margin: 0 auto;
+  max-width: 650px;
+  width: 100%;
   padding: 50px 20px 65px 32px;
 }
 .functioning__step {
+  display: flex;
+  align-items: center;
   height: 70px;
   margin: 20px 0;
   border-radius: 20px;
@@ -355,6 +362,9 @@ ul {
   color: #9356DC;
 }
 .functioning__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: -12px;
   height: 24px;
   width: 24px;
@@ -373,6 +383,12 @@ ul {
 
 .restaurants {
   background-color: #F6F6F6;
+}
+.restaurants__list {
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+  margin: 0 auto;
   padding: 0 20px 0 20px;
 }
 .restaurants a {
@@ -397,6 +413,9 @@ ul {
   object-fit: cover;
 }
 .restaurants__new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 15px;
   right: 15px;
@@ -408,6 +427,9 @@ ul {
   font-weight: bold;
 }
 .restaurants__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 75px;
   padding: 0 15px;
 }
@@ -430,8 +452,10 @@ ul {
   }
 }
 .picture {
+  max-width: 650px;
   width: 100%;
-  height: 265px;
+  max-height: 265px;
+  margin: 0 auto;
 }
 .picture img {
   width: 100%;
@@ -440,10 +464,17 @@ ul {
 }
 
 .menu {
-  margin-top: -50px;
+  max-width: 650px;
+  width: 100%;
+  margin: -50px auto 0 auto;
   padding: 35px 10px 0 20px;
   background-color: #F6F6F6;
   border-radius: 35px 35px 0 0;
+}
+.menu .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .menu h1 {
   font-family: "Shrikhand", cursive;
@@ -483,6 +514,9 @@ ul {
   background-color: #99E2D0;
 }
 .menu__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 70px;
   margin-bottom: 12px;
@@ -492,8 +526,15 @@ ul {
   cursor: pointer;
 }
 .menu__text {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding: 0 24px 0 12px;
+}
+.menu__desc-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .menu__desc {
   width: 100%;
@@ -508,6 +549,8 @@ ul {
   transition: transform 0.3s ease-in-out;
 }
 .menu .order {
+  display: flex;
+  justify-content: center;
   margin: 40px 0 80px 0;
 }
 .menu .order a {

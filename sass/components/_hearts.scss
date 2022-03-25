@@ -35,7 +35,7 @@
 }
 
 .fa-stack {
-    @extend %flex-center-center;
+    @include flex-center-center;
 }
 
 .like-button input[type=checkbox], .like-button .heart--liked {

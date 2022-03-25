@@ -1,0 +1,17 @@
+@mixin desktop-layout {
+    @media screen and (min-width: 992px) {
+        @content; 
+    }
+}
+
+@mixin flex { display: flex; }
+
+@mixin flex-column { display: flex; flex-direction: column; }
+@mixin flex-column-align-center { display: flex; flex-direction: column; align-items: center; }
+
+@mixin flex-center { display: flex; justify-content: center; }
+@mixin flex-center-center { display: flex; justify-content: center; align-items: center; }
+@mixin flex-space-between { display: flex; justify-content: space-between;}
+@mixin flex-space-between-center { display: flex; justify-content: space-between; align-items: center; }
+
+@mixin flex-align-center { display: flex; align-items: center; }

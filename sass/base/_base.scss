@@ -13,7 +13,7 @@ a {
 }
 
 main {
-    @extend %flex-column;
+    @include flex-column;
 }
 
 p {

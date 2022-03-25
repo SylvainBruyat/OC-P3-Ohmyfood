@@ -1,10 +1,10 @@
 .header {
-    @extend %flex-center-center;
+    @include flex-center-center;
     padding: 20px 20px 12px 20px;
     position: relative;
 
     p {
-        @extend %flex-center;
+        @include flex-center;
     }
 
     &__logo {

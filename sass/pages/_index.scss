@@ -1,5 +1,5 @@
 .location {
-    @extend %flex-center-center;
+    @include flex-center-center;
     padding: 15px 0;
     background-color: $background-grey--medium;
 
@@ -23,7 +23,7 @@
 }
 
 .introduction {
-    @extend %flex-column-align-center;
+    @include flex-column-align-center;
     background-color: $background-grey--light;
 
     h1 {
@@ -47,10 +47,13 @@
 }
 
 .functioning {
+    margin: 0 auto;
+    max-width: 650px;
+    width: 100%;
     padding: 50px 20px 65px 32px;
 
     &__step {
-        @extend %flex-align-center;
+        @include flex-align-center;
         height: 70px;
         margin: 20px 0;
         border-radius: 20px;
@@ -66,7 +69,7 @@
     }
 
     &__number {
-        @extend %flex-center-center;
+        @include flex-center-center;
         margin-left: -12px;
         height: 24px;
         width: 24px;
@@ -87,9 +90,14 @@
 }
 
 .restaurants {
-    @extend %flex-column;
     background-color: $background-grey--light;
-    padding: 0 20px 0 20px;
+
+    &__list {
+        @include flex-column;
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 0 20px 0 20px;
+    }
 
     a {
         margin-bottom: 15px;
@@ -117,7 +125,7 @@
     }
 
     &__new {
-        @extend %flex-center-center;
+        @include flex-center-center;
         position: absolute;
         top: 15px;
         right: 15px;
@@ -130,7 +138,7 @@
     }
 
     &__description {
-        @extend %flex-space-between-center;
+        @include flex-space-between-center;
         height: 75px;
         padding: 0 15px;
     }

@@ -40,7 +40,7 @@ $colors: (1: $color-primary, 2: $color-secondary, 3: $color-tertiary);
 }
 
 .loading {
-    @extend %flex-center-center;
+    @include flex-center-center;
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -52,7 +52,7 @@ $colors: (1: $color-primary, 2: $color-secondary, 3: $color-tertiary);
     &__spinner{
         @for $i from 1 through $num-spinners {
             &--#{$i} {
-                @extend %flex-center-center;
+                @include flex-center-center;
                 width: 250-$i*50px;
                 height: 250-$i*50px;
                 border: 10px solid white;
