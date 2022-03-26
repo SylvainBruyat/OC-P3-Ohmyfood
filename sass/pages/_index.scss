@@ -70,6 +70,7 @@
         margin: 20px 0;
         border-radius: 20px;
         background-color: $background-grey--light;
+        transition: background-color 0.2s linear;
 
         @include desktop-layout {
             min-width: 280px;
@@ -100,6 +101,7 @@
         width: 16px;
         margin: 0 25px 0 20px;
         color: $grey-primary;
+        transition: color 0.15s 0.05s linear;
     }
 
     p {
