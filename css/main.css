@@ -200,6 +200,7 @@ ul {
   font-weight: bold;
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
+  /* Besoin du préfixe -webkit- pour fonctionner sur Chrome. A mettre via autoprefixer */
   color: #FFFFFF00;
 }
 .heart--not-liked:hover {
@@ -216,7 +217,7 @@ ul {
   transform: rotate(360deg);
   transition: transform 0.5s linear;
 }
-.menu__item:hover .menu__desc, .menu__item:hover h3 {
+.menu__item:hover .menu__desc, .menu__item:hover .menu__item-name {
   margin-right: 60px;
 }
 .menu__select {
@@ -636,7 +637,10 @@ ul {
   width: 100%;
   padding: 0 24px 0 12px;
 }
-.menu h3 {
+.menu__item-name {
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

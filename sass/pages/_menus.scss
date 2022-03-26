@@ -130,7 +130,10 @@
         padding: 0 24px 0 12px;
     }
 
-    h3 {
+    &__item-name {
+        margin: 5px 0;
+        font-size: 18px;
+        font-weight: bold;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
