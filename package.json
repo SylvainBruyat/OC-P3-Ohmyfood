@@ -1,0 +1,25 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Ohmyfood Paris - initial version",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./sass/main.scss ./css/main.css --watch",
+    "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SylvainBruyat/Sylvainbruyat_3_15032022.git"
+  },
+  "keywords": [
+    "ohmyfood",
+    "restaurant"
+  ],
+  "author": "Sylvain Bruyat",
+  "license": "ISC",
+  "browserslist": "last 1 Chrome version, last 1 Firefox version",
+  "bugs": {
+    "url": "https://github.com/SylvainBruyat/Sylvainbruyat_3_15032022/issues"
+  },
+  "homepage": "https://github.com/SylvainBruyat/Sylvainbruyat_3_15032022#readme"
+}
