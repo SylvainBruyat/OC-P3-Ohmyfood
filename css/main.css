@@ -459,16 +459,22 @@ ul {
     width: 100%;
   }
 }
-.restaurants a {
+.restaurants .card-container {
+  position: relative;
+  display: flex;
   margin-bottom: 20px;
   border-radius: 12px;
 }
 @media screen and (min-width: 992px) {
-  .restaurants a {
+  .restaurants .card-container {
     min-width: 280px;
     max-width: 550px;
     width: 45%;
   }
+}
+.restaurants a {
+  width: 100%;
+  border-radius: 12px;
 }
 .restaurants__card {
   width: 100%;
@@ -507,6 +513,12 @@ ul {
   align-items: center;
   height: 75px;
   padding: 0 15px;
+  border-radius: 0 0 12px 12px;
+}
+.restaurants .like-button {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
 }
 .restaurants__heart {
   font-size: 24px;

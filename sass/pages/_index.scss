@@ -139,15 +139,21 @@
         }
     }
 
-    a {
+    .card-container {
+        position: relative;
+        display: flex;
         margin-bottom: 20px;
         border-radius: 12px;
-
         @include desktop-layout {
             min-width: 280px;
             max-width: 550px;
             width: 45%;
         }
+    }
+
+    a {
+        width: 100%;
+        border-radius: 12px;
     }
 
     &__card {
@@ -187,6 +193,13 @@
         @include flex-space-between-center;
         height: 75px;
         padding: 0 15px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .like-button {
+        position: absolute;
+        right: 15px;
+        bottom: 20px;
     }
 
     &__heart {
