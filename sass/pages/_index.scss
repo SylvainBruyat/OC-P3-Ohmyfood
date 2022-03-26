@@ -50,7 +50,7 @@
     margin: 0 auto;
     max-width: 650px;
     width: 100%;
-    padding: 50px 20px 65px 32px;
+    padding: 30px 20px 50px 32px;
 
     @include desktop-layout {
         max-width: 1500px;
@@ -112,10 +112,12 @@
 .restaurants {
     @include flex-column-align-center;
     background-color: $background-grey--light;
+    padding: 40px 0;
 
     h2 {
         max-width: 650px;
         width: 100%;
+        margin-bottom: 30px;
         padding-left: 20px;
 
         @include desktop-layout {
@@ -138,7 +140,7 @@
     }
 
     a {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         border-radius: 12px;
 
         @include desktop-layout {
