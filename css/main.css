@@ -210,14 +210,16 @@ ul {
 .menu__item input[type=checkbox] {
   display: none;
 }
-.menu__item:hover .menu__select, .menu__item:hover .menu__price {
+.menu__item input[type=checkbox]:checked ~ .menu__select,
+.menu__item input[type=checkbox]:checked ~ .menu__text .menu__price {
   transform: translateX(-60px);
 }
-.menu__item:hover .menu__select::before {
+.menu__item input[type=checkbox]:checked ~ .menu__select::before {
   transform: rotate(360deg);
   transition: transform 0.5s linear;
 }
-.menu__item:hover .menu__desc, .menu__item:hover .menu__item-name {
+.menu__item input[type=checkbox]:checked ~ .menu__text .menu__desc,
+.menu__item input[type=checkbox]:checked ~ .menu__text .menu__item-name {
   margin-right: 60px;
 }
 .menu__select {

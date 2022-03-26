@@ -4,16 +4,18 @@
             display: none;
         }
 
-        &:hover .menu__select, &:hover .menu__price {
+        input[type=checkbox]:checked ~ .menu__select,
+        input[type=checkbox]:checked ~ .menu__text .menu__price {
             transform: translateX(-60px);
-        }
+        }        
 
-        &:hover .menu__select::before {
+        input[type=checkbox]:checked ~ .menu__select::before {
             transform: rotate(360deg);
             transition: transform 0.5s linear;
         }
 
-        &:hover .menu__desc, &:hover .menu__item-name {
+        input[type=checkbox]:checked ~ .menu__text .menu__desc,
+        input[type=checkbox]:checked ~ .menu__text .menu__item-name {
             margin-right: 60px;
         }
     }
