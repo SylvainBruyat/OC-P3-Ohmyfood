@@ -305,7 +305,7 @@ ul {
 }
 .footer__icon {
   width: 12px;
-  margin-right: 12px;
+  margin-right: 10px;
   color: white;
 }
 
@@ -341,14 +341,13 @@ ul {
   background-color: #F6F6F6;
 }
 .introduction h1 {
-  max-width: 75%;
-  /* Remplacer par des paddings. Eliminer au maximum les % dans les largeurs (sur tous les fichiers) */
+  padding: 0 30px;
   margin: 45px 0 20px 0;
   font-size: 24px;
   text-align: center;
 }
 .introduction__text {
-  max-width: 85%;
+  padding: 0 20px;
   margin: 0 0 30px 0;
   color: #7D7D7D;
   text-align: center;
@@ -456,7 +455,6 @@ ul {
     justify-content: space-around;
     flex-wrap: wrap;
     max-width: 1500px;
-    width: 100%;
   }
 }
 .restaurants__card-container {
@@ -615,18 +613,6 @@ ul {
     width: 30%;
   }
 }
-.menu__starters {
-  transform-origin: bottom;
-  animation: menu-display 0.6s linear backwards;
-}
-.menu__main-courses {
-  transform-origin: bottom;
-  animation: menu-display 0.4s 0.1s linear backwards;
-}
-.menu__desserts {
-  transform-origin: bottom;
-  animation: menu-display 0.4s 0.2s linear backwards;
-}
 .menu h2 {
   position: relative;
   margin: 40px 0 25px 0;
@@ -653,6 +639,38 @@ ul {
   border-radius: 15px;
   overflow: hidden;
   cursor: pointer;
+  transform-origin: bottom;
+  animation: menu-display 0.3s linear backwards;
+}
+.menu__item--1 {
+  animation-delay: 0ms;
+}
+.menu__item--2 {
+  animation-delay: 100ms;
+}
+.menu__item--3 {
+  animation-delay: 200ms;
+}
+.menu__item--4 {
+  animation-delay: 300ms;
+}
+.menu__item--5 {
+  animation-delay: 400ms;
+}
+.menu__item--6 {
+  animation-delay: 500ms;
+}
+.menu__item--7 {
+  animation-delay: 600ms;
+}
+.menu__item--8 {
+  animation-delay: 700ms;
+}
+.menu__item--9 {
+  animation-delay: 800ms;
+}
+.menu__item--10 {
+  animation-delay: 900ms;
 }
 .menu__text {
   display: flex;
@@ -667,7 +685,7 @@ ul {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: margin-right 0.3s ease-in-out;
+  transition: margin-right 0.4s 0.1s ease-in-out;
 }
 .menu__desc-price {
   display: flex;
@@ -680,16 +698,16 @@ ul {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: margin-right 0.3s ease-in-out;
+  transition: margin-right 0.4s 0.1s ease-in-out;
 }
 .menu__price {
   font-weight: bold;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.4s 0.1s ease-in-out;
 }
 .menu__order {
   display: flex;
   justify-content: center;
-  margin: 50px 0 80px 0;
+  margin: 50px 0 50px 0;
 }
 .menu__order a {
   border-radius: 25px;

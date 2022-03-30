@@ -80,22 +80,6 @@
         }
     }
 
-    &__starters {
-        transform-origin: bottom;
-        animation: menu-display 0.6s linear backwards;
-    }
-    
-
-    &__main-courses {
-        transform-origin: bottom;
-        animation: menu-display 0.4s 0.1s linear backwards;
-    }
-    
-    &__desserts {
-        transform-origin: bottom;
-        animation: menu-display 0.4s 0.2s linear backwards;
-    }   
-
     h2 {
         position: relative;
         margin: 40px 0 25px 0;
@@ -122,6 +106,13 @@
         border-radius: 15px;
         overflow: hidden;
         cursor: pointer;
+        transform-origin: bottom;
+        animation: menu-display 0.3s linear backwards;
+        @for $i from 1 through $max-number-of-menu-items {
+            &--#{$i} {
+                animation-delay: ($menu-items-anim-delay * $i - 100);
+            }
+        }
     }
 
     &__text {
@@ -137,7 +128,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        transition: margin-right 0.3s ease-in-out;
+        transition: margin-right 0.4s 0.1s ease-in-out;
     }
 
     &__desc-price {
@@ -150,17 +141,17 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        transition: margin-right 0.3s ease-in-out;
+        transition: margin-right 0.4s 0.1s ease-in-out;
     }
 
     &__price {
         font-weight: bold;
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.4s 0.1s ease-in-out;
     }
 
     &__order {
         @include flex-center;
-        margin: 50px 0 80px 0;
+        margin: 50px 0 50px 0;
 
         a {
             border-radius: 25px;
