@@ -76,9 +76,7 @@ ul {
   width: 100%;
   height: 100%;
   background-color: white;
-  animation: white-background 0.1s ease-in-out forwards;
-  /******* Durée de l'animation réduite à .1s pendant le développement.
-  A remettre à 3s avant livraison ****/
+  animation: white-background 3s ease-in-out forwards;
 }
 .loading__spinner--1 {
   display: flex;
@@ -89,9 +87,7 @@ ul {
   border: 10px solid white;
   border-bottom: 10px solid #9356DC;
   border-radius: 50%;
-  animation: spinner 0.1s ease-in-out 50ms both;
-  /******* Durée de l'animation réduite à .1s pendant le développement.
-  A remettre à 3s avant livraison ****/
+  animation: spinner 3s ease-in-out 50ms both;
 }
 .loading__spinner--2 {
   display: flex;
@@ -102,9 +98,7 @@ ul {
   border: 10px solid white;
   border-bottom: 10px solid #FF79DA;
   border-radius: 50%;
-  animation: spinner 0.1s ease-in-out 100ms both;
-  /******* Durée de l'animation réduite à .1s pendant le développement.
-  A remettre à 3s avant livraison ****/
+  animation: spinner 3s ease-in-out 100ms both;
 }
 .loading__spinner--3 {
   display: flex;
@@ -115,9 +109,7 @@ ul {
   border: 10px solid white;
   border-bottom: 10px solid #99E2D0;
   border-radius: 50%;
-  animation: spinner 0.1s ease-in-out 150ms both;
-  /******* Durée de l'animation réduite à .1s pendant le développement.
-  A remettre à 3s avant livraison ****/
+  animation: spinner 3s ease-in-out 150ms both;
 }
 
 .btn {
@@ -184,11 +176,11 @@ ul {
 
 .like-button input[type=checkbox]:checked ~ .heart--liked {
   display: inline-block;
-  animation: liking-filled-heart 1s ease-in-out;
+  animation: liking-filled-heart 0.5s ease-in-out;
 }
 
 .like-button input[type=checkbox]:checked ~ .heart--not-liked {
-  animation: liking-empty-heart 0.4s 0.6s forwards;
+  animation: liking-empty-heart 0.2s 0.3s forwards;
 }
 
 .fa-heart {
@@ -199,8 +191,10 @@ ul {
 .heart--liked {
   font-weight: bold;
   background: linear-gradient(#9356DC, #FF79DA);
+  /*******************************************************************************************************************************/
   background-clip: text;
-  /* Besoin du préfixe -webkit- pour fonctionner sur Chrome. A mettre via autoprefixer */
+  /* Besoin du préfixe -webkit- pour fonctionner sur Chrome. A modifier pour ne pas utiliser de préfixage */
+  /*******************************************************************************************************************************/
   color: #FFFFFF00;
 }
 .heart--not-liked:hover {
@@ -236,7 +230,6 @@ ul {
   transition: transform 0.5s ease-in-out;
 }
 
-/* @import "./layouts/flex"; */
 .shadow {
   box-shadow: 0px 5px 5px 2px #E9E9E9;
   transition: box-shadow 0.15s ease-in-out;
@@ -276,7 +269,7 @@ ul {
 .footer__content {
   max-width: 650px;
   margin: 0 auto;
-  padding: 25px 0 15px 25px;
+  padding: 25px 0 5px 25px;
 }
 @media screen and (min-width: 992px) {
   .footer__content {
@@ -327,6 +320,8 @@ ul {
   width: 140px;
   background-color: #E9E9E9;
   border: 0;
+  font-weight: 500;
+  font-size: 18px;
 }
 .location__text-field::placeholder {
   opacity: 1;
@@ -336,6 +331,7 @@ ul {
 }
 .location__icon {
   margin-right: 12px;
+  font-size: 19px;
 }
 
 .introduction {
@@ -346,6 +342,7 @@ ul {
 }
 .introduction h1 {
   max-width: 75%;
+  /* Remplacer par des paddings. Eliminer au maximum les % dans les largeurs (sur tous les fichiers) */
   margin: 45px 0 20px 0;
   font-size: 24px;
   text-align: center;
@@ -365,7 +362,7 @@ ul {
   margin: 0 auto;
   max-width: 650px;
   width: 100%;
-  padding: 30px 20px 50px 32px;
+  padding: 30px 20px 30px 32px;
 }
 @media screen and (min-width: 992px) {
   .functioning {
@@ -389,6 +386,7 @@ ul {
   height: 70px;
   margin: 20px 0;
   border-radius: 20px;
+  cursor: pointer;
   background-color: #F6F6F6;
   transition: background-color 0.2s linear;
 }

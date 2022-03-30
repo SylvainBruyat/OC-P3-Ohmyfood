@@ -7,6 +7,8 @@
         width: 140px;
         background-color: $background-grey--medium;
         border: 0;
+        font-weight: 500;
+        font-size: 18px;
 
         &::placeholder {
             opacity: 1;
@@ -19,6 +21,7 @@
 
     &__icon {
         margin-right: 12px;
+        font-size: 19px;
     }
 }
 
@@ -27,7 +30,7 @@
     background-color: $background-grey--light;
 
     h1 {
-        max-width: 75%;
+        max-width: 75%; /* Remplacer par des paddings. Eliminer au maximum les % dans les largeurs (sur tous les fichiers) */
         margin: 45px 0 20px 0;
         font-size: 24px;
         text-align: center;
@@ -50,7 +53,7 @@
     margin: 0 auto;
     max-width: 650px;
     width: 100%;
-    padding: 30px 20px 50px 32px;
+    padding: 30px 20px 30px 32px;
 
     @include desktop-layout {
         max-width: 1500px;
@@ -69,6 +72,7 @@
         height: 70px;
         margin: 20px 0;
         border-radius: 20px;
+        cursor: pointer;
         background-color: $background-grey--light;
         transition: background-color 0.2s linear;
 

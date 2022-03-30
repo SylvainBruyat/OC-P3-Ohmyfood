@@ -44,11 +44,11 @@
 
 .like-button input[type=checkbox]:checked ~ .heart--liked {
     display: inline-block;
-    animation: liking-filled-heart 1s ease-in-out;
+    animation: liking-filled-heart 0.5s ease-in-out;
 }
 
 .like-button input[type=checkbox]:checked ~ .heart--not-liked {
-    animation: liking-empty-heart .4s 0.6s forwards;
+    animation: liking-empty-heart 0.2s 0.3s forwards;
 }
 
 .fa-heart {
@@ -60,7 +60,9 @@
     &--liked {
         font-weight: bold;
         background: linear-gradient($color-primary, $color-secondary);
-        background-clip: text; /* Besoin du préfixe -webkit- pour fonctionner sur Chrome. A mettre via autoprefixer */
+        /*******************************************************************************************************************************/
+        background-clip: text; /* Besoin du préfixe -webkit- pour fonctionner sur Chrome. A modifier pour ne pas utiliser de préfixage */
+        /*******************************************************************************************************************************/
         color: #FFFFFF00;
     }
     &--not-liked {
