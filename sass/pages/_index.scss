@@ -139,7 +139,7 @@
         }
     }
 
-    .card-container {
+    &__card-container {
         position: relative;
         display: flex;
         margin-bottom: 20px;
@@ -154,6 +154,15 @@
     a {
         width: 100%;
         border-radius: 12px;
+
+        &:hover h3, &:hover .restaurants__description p {
+            color: $color-primary;
+        }
+
+        &:hover img {
+            transform: scale(1.1);
+        }
+
     }
 
     &__card {
@@ -167,6 +176,7 @@
         position: relative;
         height: 175px;
         border-radius: 12px 12px 0 0;
+        overflow: hidden;
     }
 
     img {
@@ -174,6 +184,7 @@
         height: 100%;
         border-radius: 12px 12px 0 0;
         object-fit: cover;
+        transition: transform 0.2s linear;
     }
 
     &__new {
@@ -194,6 +205,10 @@
         height: 75px;
         padding: 0 15px;
         border-radius: 0 0 12px 12px;
+
+        h3, p {
+            transition: color 0.2s linear;
+        }
     }
 
     .like-button {
