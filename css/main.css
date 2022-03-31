@@ -604,7 +604,7 @@ ul {
   .menu__list {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     max-width: 1450px;
     margin: 0 auto;
   }
@@ -687,6 +687,9 @@ ul {
   overflow: hidden;
   text-overflow: ellipsis;
   transition: margin-right 0.4s 0.1s ease-in-out;
+}
+.menu__item-name--wrap {
+  white-space: normal;
 }
 .menu__desc-price {
   display: flex;

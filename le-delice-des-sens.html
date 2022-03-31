@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/583ad7970e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="icon" href="./images/icons/ohmyfood-purple.ico" type="image/x-icon" />
+
+    <title>Ohmyfood! Paris | Le délice des sens</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <i class="fas fa-arrow-left header__arrow"></i>
+        </a>
+        <p>
+            <img src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood" class="header__logo" />
+        </p>
+    </header>
+
+    <main>
+        <div class="picture">
+            <p class="picture__box">
+                <img src="./images/restaurants/le-delice-des-sens.jpg" alt="Photo d'illustration du restaurant Le délice des sens">
+            </p>
+        </div>
+        <section class="menu">
+            <div class="menu__title">
+                <h1>Le délice des sens</h1>
+                <div class="menu__heart-container">
+                    <label for="like-button" class="like-button fa-stack">
+                        <input type="checkbox" id="like-button" />
+                        <i class="fas fa-heart heart--not-liked fa-stack-1x"></i>
+                        <svg viewBox="0 0 512 512" class="heart--liked">
+                            <defs>
+                                <linearGradient id="heart-color" gradientTransform="rotate(90)">
+                                  <stop offset="0%" class="heart-top" />
+                                  <stop offset="100%" class="heart-bottom" />
+                                </linearGradient>
+                            </defs>
+                            <path
+                                d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                                fill="url(#heart-color)"
+                            />
+                        </svg>
+                    </label>
+                </div>
+            </div>
+            <div class="menu__list">
+                <section class="menu__starters">
+                    <div>
+                        <h2>
+                            Entrées
+                            <span class="menu__underline"></span>
+                        </h2>
+                    </div>
+                    <label for="menu__select-tartare" class="menu__item menu__item--1">
+                        <input type="checkbox" id="menu__select-tartare">
+                        <span class="menu__text">
+                            <span class="menu__item-name">Tartare de thon</span>
+                            <span class="menu__desc-price">
+                                <span class="menu__desc">Assaisonné au yuzu</span>
+                                <span class="menu__price">25€</span>
+                            </span>
+                        </span>                        
+                        <i class="fas fa-check-circle menu__select"></i>
+                    </label>
+                    <label for="menu__select-bouchee" class="menu__item menu__item--2">
+                        <input type="checkbox" id="menu__select-bouchee">
+                        <span class="menu__text">
+                            <span class="menu__item-name">Bouchée de homard croustillant</span>
+                            <span class="menu__desc-price">
+                                <span class="menu__desc">Et sa farandole de petits légumes</span>
+                                <span class="menu__price">35€</span>
+                            </span>
+                        </span>
+                        <i class="fas fa-check-circle menu__select"></i>
+                    </label>
+                    <label for="menu__select-veloute" class="menu__item menu__item--3">
+                        <input type="checkbox" id="menu__select-veloute">
+                        <span class="menu__text">
+                            <span class="menu__item-name">Velouté de cèpes</span>
+                            <span class="menu__desc-price">
+                                <span class="menu__desc">Aux truffes</span>
+                                <span class="menu__price">20€</span>
+                            </span>
+                        </span>                        
+                        <i class="fas fa-check-circle menu__select"></i>
+                    </label>
+                </section>
+
+                <section class="menu__main-courses">
+                    <div>
+                        <h2>
+                            Plats
+                            <span class="menu__underline"></span>
+                        </h2>
+                    </div>
+                    <label for="menu__select-poulet" class="menu__item menu__item--4">
+                        <input type="checkbox" id="menu__select-poulet">
+                        <span class="menu__text">
+                            <span class="menu__item-name menu__item-name--wrap">Poulet rôti aux herbes de Provence</span>
+                            <span class="menu__desc-price">
+                                <span class="menu__desc">Et sa crème de truffe</span>
+                                <span class="menu__price">40€</span>
+                            </span>
+                        </span>                        
+                        <i class="fas fa-check-circle menu__select"></i>
+                    </label>
+                    <label for="menu__select-langouste" class="menu__item menu__item--5">
+                        <input type="checkbox" id="menu__select-langouste">
+                        <span class="menu__text">
+                            <span class="menu__item-name">Langouste rôtie</span>
+                            <span class="menu__desc-price">
+                                <span class="menu__desc">Et ses légumes de saison</span>
+                                <span class="menu__price">35€</span>
+                            </span>
+                        </span>                        
+                        <i class="fas fa-check-circle menu__select"></i>
+                    </label>
+                    <label for="menu__select-boeuf" class="menu__item menu__item--6">
+                        <input type="checkbox" id="menu__select-boeuf">
+                        <span class="menu__text">
+                            <span class="menu__item-name">Côte de boeuf Angus</span>
+                            <span class="menu__desc-price">
+                                <span class="menu__desc">Et sa purée de panais</span>
+                                <span class="menu__price">44€</span>
+                            </span>
+                        </span>                        
+                        <i class="fas fa-check-circle menu__select"></i>
+                    </label>
+                </section>
+
+                <section class="menu__desserts">
+                    <div>
+                        <h2>
+                            Desserts
+                            <span class="menu__underline"></span>
+                        </h2>
+                    </div>
+                    <label for="menu__select-farandole" class="menu__item menu__item--7">
+                        <input type="checkbox" id="menu__select-farandole">
+                        <span class="menu__text">
+                            <span class="menu__item-name">Farandole de desserts</span>
+                            <span class="menu__desc-price">
+                                <span class="menu__desc">Du chef</span>
+                                <span class="menu__price">18€</span>
+                            </span>
+                        </span>                    
+                        <i class="fas fa-check-circle menu__select"></i>
+                    </label>
+                    <label for="menu__select-creme" class="menu__item menu__item--8">
+                        <input type="checkbox" id="menu__select-creme">
+                        <span class="menu__text">
+                            <span class="menu__item-name">Crème brûlée</span>
+                            <span class="menu__desc-price">
+                                <span class="menu__desc">Revisitée</span>
+                                <span class="menu__price">22€</span>
+                            </span>
+                        </span>                        
+                        <i class="fas fa-check-circle menu__select"></i>
+                    </label>
+                    <label for="menu__select-tiramisu" class="menu__item menu__item--9">
+                        <input type="checkbox" id="menu__select-tiramisu">
+                        <span class="menu__text">
+                            <span class="menu__item-name">Tiramisu</span>
+                            <span class="menu__desc-price">
+                                <span class="menu__desc">À la noisette</span>
+                                <span class="menu__price">23€</span>
+                            </span>
+                        </span>                        
+                        <i class="fas fa-check-circle menu__select"></i>
+                    </label>
+                </section>
+            </div>
+
+            <div class="menu__order">
+                <a href="#">
+                    <p class="btn shadow">Commander</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <h2>ohmyfood</h2>
+            <ul>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <i class="fas fa-utensils footer__icon"></i>
+                        Proposer un restaurant
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <i class="fas fa-hands-helping fa-sm footer__icon"></i>
+                        Devenir partenaire
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Mentions légales</a>
+                </li>
+                <li class="footer__item">
+                    <a href="mailto:contact-paris@ohmyfood.com" class="footer__link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

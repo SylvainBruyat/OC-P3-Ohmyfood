@@ -64,7 +64,7 @@
 
     &__list {
         @include desktop-layout {
-            @include flex-space-around-center;
+            @include flex-space-around-flex-start;
             max-width: 1450px;
             margin: 0 auto;
         }
@@ -125,6 +125,10 @@
         overflow: hidden;
         text-overflow: ellipsis;
         transition: margin-right 0.4s 0.1s ease-in-out;
+
+        &--wrap {
+            white-space: normal;
+        }
     }
 
     &__desc-price {
