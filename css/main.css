@@ -87,7 +87,8 @@ ul {
   border: 10px solid white;
   border-bottom: 10px solid #9356DC;
   border-radius: 50%;
-  animation: spinner 3s ease-in-out 50ms both;
+  animation: spinner 3s ease-in-out forwards;
+  animation-delay: 0ms;
 }
 .loading__spinner--2 {
   display: flex;
@@ -98,7 +99,8 @@ ul {
   border: 10px solid white;
   border-bottom: 10px solid #FF79DA;
   border-radius: 50%;
-  animation: spinner 3s ease-in-out 100ms both;
+  animation: spinner 3s ease-in-out forwards;
+  animation-delay: 150ms;
 }
 .loading__spinner--3 {
   display: flex;
@@ -109,7 +111,8 @@ ul {
   border: 10px solid white;
   border-bottom: 10px solid #99E2D0;
   border-radius: 50%;
-  animation: spinner 3s ease-in-out 150ms both;
+  animation: spinner 3s ease-in-out forwards;
+  animation-delay: 300ms;
 }
 
 .btn {
@@ -515,8 +518,9 @@ ul {
 }
 .restaurants__description {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   height: 75px;
   padding: 0 15px;
   border-radius: 0 0 12px 12px;

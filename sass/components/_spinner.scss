@@ -57,7 +57,8 @@ $colors: (1: $color-primary, 2: $color-secondary, 3: $color-tertiary);
                 border: 10px solid white;
                 border-bottom: 10px solid map-get($colors, $i);
                 border-radius: 50%;
-                animation: spinner 3s ease-in-out 50ms*$i both;
+                animation: spinner 3s ease-in-out forwards;
+                animation-delay: (150ms *$i - 150);
             } 
         }
     }

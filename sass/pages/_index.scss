@@ -203,7 +203,7 @@
     }
 
     &__description {
-        @include flex-space-between-center;
+        @include flex-column-center-flex-start;
         height: 75px;
         padding: 0 15px;
         border-radius: 0 0 12px 12px;
