@@ -4,8 +4,7 @@
   "description": "Ohmyfood Paris - initial version",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./sass/main.scss ./css/main.css --watch",
-    "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/prefixed/"
+    "sass": "sass ./sass/main.scss ./css/main.css --watch"
   },
   "repository": {
     "type": "git",

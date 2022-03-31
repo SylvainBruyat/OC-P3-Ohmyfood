@@ -62,10 +62,6 @@
         padding-right: 15px;
     }
 
-    &__heart {
-        font-size: 28px;
-    }
-
     &__list {
         @include desktop-layout {
             @include flex-space-around-center;

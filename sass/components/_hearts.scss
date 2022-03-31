@@ -58,14 +58,20 @@
 
 .heart {
     &--liked {
-        font-weight: bold;
-        background: linear-gradient($color-primary, $color-secondary);
-        /*******************************************************************************************************************************/
-        background-clip: text; /* Besoin du préfixe -webkit- pour fonctionner sur Chrome. A modifier pour ne pas utiliser de préfixage */
-        /*******************************************************************************************************************************/
-        color: #FFFFFF00;
+        width: 28px;
+        height: 28px;
     }
+
+    &-top {
+        stop-color: $color-primary;
+    }
+
+    &-bottom {
+        stop-color: $color-secondary;
+    }
+
     &--not-liked {
+        font-size: 28px;
         &:hover {
             animation: heartbeat .3s ease-in-out;
         }

@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/583ad7970e.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/prefixed/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
     <link rel="icon" href="./images/icons/ohmyfood-purple.ico" type="image/x-icon" />
 
@@ -92,8 +92,19 @@
                     </a>
                     <label for="like-button-palette-du-gout" class="like-button fa-stack">
                         <input type="checkbox" id="like-button-palette-du-gout" />
-                        <i class="fas fa-heart restaurants__heart heart--not-liked fa-stack-1x"></i>
-                        <i class="fas fa-heart restaurants__heart heart--liked fa-stack-1x"></i>
+                        <i class="fas fa-heart heart--not-liked fa-stack-1x"></i>
+                        <svg viewBox="0 0 512 512" class="heart--liked">
+                            <defs>
+                                <linearGradient id="heart-color--1" gradientTransform="rotate(90)">
+                                  <stop offset="0%" class="heart-top" />
+                                  <stop offset="100%" class="heart-bottom" />
+                                </linearGradient>
+                            </defs>
+                            <path
+                                d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                                fill="url(#heart-color--1)"
+                            />
+                        </svg>
                     </label>
                 </div>
                 <div class="restaurants__card-container">
@@ -111,8 +122,19 @@
                     </a>
                     <label for="like-button-note-enchantee" class="like-button fa-stack">
                         <input type="checkbox" id="like-button-note-enchantee" />
-                        <i class="fas fa-heart restaurants__heart heart--not-liked fa-stack-1x"></i>
-                        <i class="fas fa-heart restaurants__heart heart--liked fa-stack-1x"></i>
+                        <i class="fas fa-heart heart--not-liked fa-stack-1x"></i>
+                        <svg viewBox="0 0 512 512" class="heart--liked">
+                            <defs>
+                                <linearGradient id="heart-color--2" gradientTransform="rotate(90)">
+                                  <stop offset="0%" class="heart-top" />
+                                  <stop offset="100%" class="heart-bottom" />
+                                </linearGradient>
+                            </defs>
+                            <path
+                                d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                                fill="url(#heart-color--2)"
+                            />
+                        </svg>
                     </label>
                 </div>
                 <div class="restaurants__card-container">
@@ -129,8 +151,19 @@
                     </a>
                     <label for="like-button-francaise" class="like-button fa-stack">
                         <input type="checkbox" id="like-button-francaise" />
-                        <i class="fas fa-heart restaurants__heart heart--not-liked fa-stack-1x"></i>
-                        <i class="fas fa-heart restaurants__heart heart--liked fa-stack-1x"></i>
+                        <i class="fas fa-heart heart--not-liked fa-stack-1x"></i>
+                        <svg viewBox="0 0 512 512" class="heart--liked">
+                            <defs>
+                                <linearGradient id="heart-color--3" gradientTransform="rotate(90)">
+                                  <stop offset="0%" class="heart-top" />
+                                  <stop offset="100%" class="heart-bottom" />
+                                </linearGradient>
+                            </defs>
+                            <path
+                                d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                                fill="url(#heart-color--3)"
+                            />
+                        </svg>
                     </label>
                 </div>
                 <div class="restaurants__card-container">
@@ -147,8 +180,19 @@
                     </a>
                     <label for="like-button-delice-des-sens" class="like-button fa-stack">
                         <input type="checkbox" id="like-button-delice-des-sens" />
-                        <i class="fas fa-heart restaurants__heart heart--not-liked fa-stack-1x"></i>
-                        <i class="fas fa-heart restaurants__heart heart--liked fa-stack-1x"></i>
+                        <i class="fas fa-heart heart--not-liked fa-stack-1x"></i>
+                        <svg viewBox="0 0 512 512" class="heart--liked">
+                            <defs>
+                                <linearGradient id="heart-color--4" gradientTransform="rotate(90)">
+                                  <stop offset="0%" class="heart-top" />
+                                  <stop offset="100%" class="heart-bottom" />
+                                </linearGradient>
+                            </defs>
+                            <path
+                                d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                                fill="url(#heart-color--4)"
+                            />
+                        </svg>
                     </label>
                 </div>
             </div>

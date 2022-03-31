@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -192,13 +191,17 @@ ul {
 }
 
 .heart--liked {
-  font-weight: bold;
-  background: linear-gradient(#9356DC, #FF79DA);
-  /*******************************************************************************************************************************/
-  background-clip: text;
-  /* Besoin du préfixe -webkit- pour fonctionner sur Chrome. A modifier pour ne pas utiliser de préfixage */
-  /*******************************************************************************************************************************/
-  color: #FFFFFF00;
+  width: 28px;
+  height: 28px;
+}
+.heart-top {
+  stop-color: #9356DC;
+}
+.heart-bottom {
+  stop-color: #FF79DA;
+}
+.heart--not-liked {
+  font-size: 28px;
 }
 .heart--not-liked:hover {
   animation: heartbeat 0.3s ease-in-out;
@@ -533,9 +536,6 @@ ul {
   right: 15px;
   bottom: 20px;
 }
-.restaurants__heart {
-  font-size: 24px;
-}
 
 @keyframes menu-display {
   0% {
@@ -599,9 +599,6 @@ ul {
 }
 .menu__heart-container {
   padding-right: 15px;
-}
-.menu__heart {
-  font-size: 28px;
 }
 @media screen and (min-width: 992px) {
   .menu__list {
