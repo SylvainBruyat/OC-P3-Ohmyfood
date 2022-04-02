@@ -283,6 +283,7 @@ ul {
 @media screen and (min-width: 992px) {
   .footer__content {
     max-width: 1500px;
+    padding-left: 0;
   }
 }
 .footer h2 {

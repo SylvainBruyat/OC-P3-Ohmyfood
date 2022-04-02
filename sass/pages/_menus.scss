@@ -106,7 +106,7 @@
         animation: menu-display 0.3s linear backwards;
         @for $i from 1 through $max-number-of-menu-items {
             &--#{$i} {
-                animation-delay: ($menu-items-anim-delay * $i - 100);
+                animation-delay: ($menu-items-anim-delay * $i - $menu-items-anim-delay);
             }
         }
     }
