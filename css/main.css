@@ -152,10 +152,10 @@ ul {
 }
 @keyframes liking-filled-heart {
   0% {
-    transform: scale(0);
+    transform: scale(0) translateY(0);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1) translateY(0);
   }
 }
 @keyframes liking-empty-heart {
@@ -172,13 +172,16 @@ ul {
   align-items: center;
 }
 
-.like-button input[type=checkbox], .like-button .heart--liked {
+.like-button {
+  overflow: hidden;
+}
+
+.like-button input[type=checkbox] {
   display: none;
 }
 
 .like-button input[type=checkbox]:checked ~ .heart--liked {
-  display: inline-block;
-  animation: liking-filled-heart 0.5s ease-in-out;
+  animation: liking-filled-heart 0.5s ease-in-out forwards;
 }
 
 .like-button input[type=checkbox]:checked ~ .heart--not-liked {
@@ -193,6 +196,7 @@ ul {
 .heart--liked {
   width: 28px;
   height: 28px;
+  transform: translateY(-200px);
 }
 .heart-top {
   stop-color: #9356DC;
